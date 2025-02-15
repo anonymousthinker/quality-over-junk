@@ -8,8 +8,8 @@ const writeToFile = (html, index) => {
 const main = () => {
   games.forEach((game, index) => {
     const html = `<!DOCTYPE html>
-    <html lang="en">
-      <head>
+<html lang="en">
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,16 +25,17 @@ const main = () => {
         background-color: black;
       }
       .heading {
-        color: #d55d11;
+        color:#d55d11;
         height: 150px;
-        margin: 0px 0px 0px 22%;
         line-height: 29px;
         padding: 10px;
         font-family: "Press Start 2P", serif;
         font-size: 20px;
+        margin: 0px 0px 0px 14%;
       }
       .main-area {
-        width: 75%;
+        min-width: 600px;
+        max-width: 1400px;
         margin: 10px auto;
       }
       .left-aside {
@@ -106,11 +107,11 @@ const main = () => {
     </style>
   </head>
   <body>
-    <header class="heading">
-      <h1>QUALITY</h1>
-      <h1>OVER JUNK</h1>
-    </header>
-      <main class="main-area">
+    <main class="main-area">
+      <header class="heading">
+        <h1>QUALITY</h1>
+        <h1>OVER JUNK</h1>
+      </header>
         <aside class="left-aside">
           <h3>News Search</h3>
           <p>Systems</p>
