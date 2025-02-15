@@ -9,98 +9,107 @@ const main = () => {
   games.forEach((game, index) => {
     const html = `<!DOCTYPE html>
     <html lang="en">
-    <head>
-      <title>retro news</title>
-      <style>
-        :root {
-          --article-bg-color: #303030;
-        }
-        * {
-          background-color: black;
-        }
-        .heading {
-          text-align: center;
-        }
-        .main-area {
-          width: 75%;
-          margin: 10px auto;
-        }
-        .left-aside {
-          width: 14%;
-          display: inline-block;
-          color: white;
-        }
-        .right-aside {
-          width: 14%;
-          display: inline-block;
-          vertical-align: top;
-          color: white;
-          padding-left: 10px;
-        }
-        .news-area {
-          width: 69%;
-          display: inline-block;
-          vertical-align: top;
-          color: white;
-        }
-        .article-box {
-          margin-bottom: 20px;
-          padding: 20px;
-          border: 1px solid --article-bg-color;
-          border-radius: 10px;
-          background-color: var(--article-bg-color);
-        }
-        .article-box * {
-          background-color: var(--article-bg-color);
-        }
-        .article-box > img {
-          width: 600px;
-          height: 400px;
-          margin: 5px 145px;
-        }
-        .article-box h3 {
-          color: #af8452;
-          font-family: sans-serif;
-          text-transform: uppercase;
-          font-style: italic;
-        }
-        .article-box .text-style {
-          font-size: 17px;
-          font-weight: 100;
-          letter-spacing: 1px;
-          font-family: sans-serif;
-        }
-        ul {
-          list-style: none;
-          padding: 0px;
-        }
-        ul a {
-          font-weight: 100;
-          font-size: 17px;
-          font-family: sans-serif;
-          line-height: 25px;
-          display: block;
-          color: #af8452;
-          text-decoration: none;
-          border-bottom: 1px dotted #393939;
-        }
-        a {
-          color: #af8452;
-          text-decoration: none;
-        }
-        .right-aside img {
-          width: 45%;
-          height: 30px;
-        }
-      </style>
-    </head>
-    <body>
-      <header class="heading">
-        <img
-          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbu2RcERLlimE85L71vnfYNUEo1b-Nw_NgJjTB2JQnIiZf-bXoOJiUrVK8DlOQIOGatjp42O7gxrKCwdQwUe3TEyv2ujRpa42hWZQYcA6oL0esJDSRHI_cfesNmpWSFfvEGelQ3hWTtSY/s666/o2YUg2.jpg"
-          alt="heading"
-        />
-      </header>
+      <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>retro news</title>
+    <style>
+      :root {
+        --article-bg-color: #303030;
+      }
+      * {
+        background-color: black;
+      }
+      .heading {
+        color: #d55d11;
+        height: 150px;
+        margin: 0px 0px 0px 22%;
+        line-height: 29px;
+        padding: 10px;
+        font-family: "Press Start 2P", serif;
+        font-size: 20px;
+      }
+      .main-area {
+        width: 75%;
+        margin: 10px auto;
+      }
+      .left-aside {
+        width: 14%;
+        display: inline-block;
+        color: white;
+      }
+      .right-aside {
+        width: 14%;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        padding-left: 10px;
+      }
+      .news-area {
+        width: 69%;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+      }
+      .article-box {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid --article-bg-color;
+        border-radius: 10px;
+        background-color: var(--article-bg-color);
+      }
+      .article-box * {
+        background-color: var(--article-bg-color);
+      }
+      .article-box > img {
+        width: 65%;
+        margin: 5px 145px;
+      }
+      .article-box h3 {
+        color: #af8452;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+      .article-box .text-style {
+        font-size: 17px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+      }
+      ul {
+        list-style: none;
+        padding: 0px;
+      }
+      ul a {
+        font-weight: 100;
+        font-size: 17px;
+        font-family: sans-serif;
+        line-height: 25px;
+        display: block;
+        color: #af8452;
+        text-decoration: none;
+        border-bottom: 1px dotted #393939;
+      }
+      a {
+        color: #af8452;
+        text-decoration: none;
+      }
+      .right-aside img {
+        width: 45%;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="heading">
+      <h1>QUALITY</h1>
+      <h1>OVER JUNK</h1>
+    </header>
       <main class="main-area">
         <aside class="left-aside">
           <h3>News Search</h3>
