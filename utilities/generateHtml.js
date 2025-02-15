@@ -7,7 +7,8 @@ const writeToFile = (html, index) => {
 
 const main = () => {
   games.forEach((game, index) => {
-    const html = `<!DOCTYPE html>
+    const html = `
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -112,69 +113,69 @@ const main = () => {
         <h1>QUALITY</h1>
         <h1>OVER JUNK</h1>
       </header>
-        <aside class="left-aside">
-          <h3>News Search</h3>
-          <p>Systems</p>
-          <ul>
-            <li><a href="">Amiga</a></li>
-            <li><a href="">Armstrad</a></li>
-            <li><a href="">Atari</a></li>
-            <li><a href="">Atari 7800</a></li>
-            <li><a href="">Atari ST/STe</a></li>
-            <li><a href="">Atari XE/XL</a></li>
-            <li><a href="">BBC Micro</a></li>
-            <li><a href="">C64</a></li>
-            <li><a href="">Colecvision</a></li>
-            <li><a href="">Gameboy</a></li>
-            <li><a href="">Intellivision</a></li>
-            <li><a href="">Mega65</a></li>
-            <li><a href="">MSX</a></li>
-          </ul>
-        </aside>
-        <section class="news-area">
-          <article class="article-box">
-            <h3>${game.title}</h3>
-            <img
-              src=${game.image}
-            />
-            <p class="text-style">
-              ${game.description}
-            </p>
-          </article>
-        </section>
-        <aside class="right-aside">
-          <nav>
-            <a href=""
-              ><img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizq9fIMOVhNsPOSO-F-P3c4fMQrbHLqWeZ3acvojKvumZwZaVDhDhGyrEUBdt2FBJZNgjAipdzgoPR1mCcZxg_dsTe1F7V6iUTmI7Dljst_mcl5zJeKTSYOredMqflTo14OLR1X-sFMjugP3w-nvZF2dCtNpUxfzIIbHPb6IiuqqsXv_Pno2brusW1GNFk/s1600/Twitter-image.jpg"
-                alt="twitter"
-            /></a>
-            <a href=""
-              ><img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGkFgs8LFPS8ZJOL53DTjGqB2ZO7AZUopXMLu9DwOtymN4pu_PMG6ksIwxf8p38cViJfGCNFgGf2y7hiKS2rS69LPNZIANo1RNyuxaujfEga4JEexqNodlpFStkgStpd3iiIM-PqqQs6ED/s1600/FOLLOWFB.jpg"
-                alt="facebook"
-            /></a>
-          </nav>
-          <h3>Recommended</h3>
-          <ul>
-            <li><a href="">2D Platformers</a></li>
-            <li><a href="">AmigaBill</a></li>
-            <li><a href="">AmigaPortal.de</a></li>
-            <li><a href="">ByteDelight - ZXSpectrum Products</a></li>
-            <li><a href="">Commodore 64/128</a></li>
-            <li><a href="">Commodore Amiga</a></li>
-            <li><a href="">Dungeon Crawlers</a></li>
-            <li><a href="">MS-DOS Gaming!</a></li>
-            <li><a href="">Retro For Sale</a></li>
-            <li><a href="">SabermanYT</a></li>
-            <li><a href="">Shoot Em Ups</a></li>
-            <li><a href="">Torque Live!</a></li>
-          </ul>
-        </aside>
-      </main>
-    </body>
-  </html>
-  `
+      <aside class="left-aside">
+        <h3>News Search</h3>
+        <p>Systems</p>
+        <ul>
+          <li><a href="">Amiga</a></li>
+          <li><a href="">Armstrad</a></li>
+          <li><a href="">Atari</a></li>
+          <li><a href="">Atari 7800</a></li>
+          <li><a href="">Atari ST/STe</a></li>
+          <li><a href="">Atari XE/XL</a></li>
+          <li><a href="">BBC Micro</a></li>
+          <li><a href="">C64</a></li>
+          <li><a href="">Colecvision</a></li>
+          <li><a href="">Gameboy</a></li>
+          <li><a href="">Intellivision</a></li>
+          <li><a href="">Mega65</a></li>
+          <li><a href="">MSX</a></li>
+        </ul>
+      </aside>
+      <section class="news-area">
+        <article class="article-box">
+          <h3>${game.title}</h3>
+          <img
+            src=${game.image}
+          />
+          <p class="text-style">
+            ${game.description}
+          </p>
+        </article>
+      </section>
+      <aside class="right-aside">
+        <nav>
+          <a href=""
+            ><img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizq9fIMOVhNsPOSO-F-P3c4fMQrbHLqWeZ3acvojKvumZwZaVDhDhGyrEUBdt2FBJZNgjAipdzgoPR1mCcZxg_dsTe1F7V6iUTmI7Dljst_mcl5zJeKTSYOredMqflTo14OLR1X-sFMjugP3w-nvZF2dCtNpUxfzIIbHPb6IiuqqsXv_Pno2brusW1GNFk/s1600/Twitter-image.jpg"
+              alt="twitter"
+          /></a>
+          <a href=""
+            ><img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGkFgs8LFPS8ZJOL53DTjGqB2ZO7AZUopXMLu9DwOtymN4pu_PMG6ksIwxf8p38cViJfGCNFgGf2y7hiKS2rS69LPNZIANo1RNyuxaujfEga4JEexqNodlpFStkgStpd3iiIM-PqqQs6ED/s1600/FOLLOWFB.jpg"
+              alt="facebook"
+          /></a>
+        </nav>
+        <h3>Recommended</h3>
+        <ul>
+          <li><a href="">2D Platformers</a></li>
+          <li><a href="">AmigaBill</a></li>
+          <li><a href="">AmigaPortal.de</a></li>
+          <li><a href="">ByteDelight - ZXSpectrum Products</a></li>
+          <li><a href="">Commodore 64/128</a></li>
+          <li><a href="">Commodore Amiga</a></li>
+          <li><a href="">Dungeon Crawlers</a></li>
+          <li><a href="">MS-DOS Gaming!</a></li>
+          <li><a href="">Retro For Sale</a></li>
+          <li><a href="">SabermanYT</a></li>
+          <li><a href="">Shoot Em Ups</a></li>
+          <li><a href="">Torque Live!</a></li>
+        </ul>
+      </aside>
+    </main>
+  </body>
+</html>
+`
     writeToFile(html, index)
   })
 };
